@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{7be16b03-12d0-4946-a125-f92d79d47370}</formid>
+    <IntroducedVersion>0.1.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{48369e4c-3aa7-4aff-a8f7-341efdac51b9}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{76a9055e-4a19-40d1-9935-6826e8ecbe5f}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e887e9e5-8240-4c45-85b8-d3b364f70d24}">
+                        <labels>
+                          <label description="Session Title" languagecode="1033" />
+                        </labels>
+                        <control id="mszcool_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mszcool_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{53f53255-4622-4bec-8277-b1d8a084b0a3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Industry" languagecode="1033" />
+                        </labels>
+                        <control id="mszcool_industry" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mszcool_industry" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{757852cd-d358-4203-a47f-4138717150ed}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Level" languagecode="1033" />
+                        </labels>
+                        <control id="mszcool_level" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mszcool_level" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d7da7e6d-9ec7-43e9-80f4-ca8831ac9cff}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Presenters" languagecode="1033" />
+                        </labels>
+                        <control id="mszcool_presenters" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mszcool_presenters" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fed93c7e-a9a2-4706-a38c-1ccbf6ec7c0b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="SessionStatus" languagecode="1033" />
+                        </labels>
+                        <control id="mszcool_sessionstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mszcool_sessionstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6954d6c1-840a-48eb-9aa3-9ca24b4f48ae}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="SessionStatusReason" languagecode="1033" />
+                        </labels>
+                        <control id="mszcool_sessionstatusreason" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mszcool_sessionstatusreason" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{769af159-dba9-4b6e-a7c2-57e857de15f0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="SessionTechnology" languagecode="1033" />
+                        </labels>
+                        <control id="mszcool_sessiontechnology" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mszcool_sessiontechnology" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2df4a3dc-b15b-4825-b8da-d72f09c6f3f8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Abstract" languagecode="1033" />
+                        </labels>
+                        <control id="mszcool_abstract" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="mszcool_abstract" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{f7d1cccd-884e-4e8e-b2c5-529907743a48}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{fa778b59-3f41-4276-8400-b1ba19f377f6}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{cc45639a-91d7-4430-8f26-498e1fa47b2f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{5cbb22b6-ecb9-4bf3-b30c-0930083caadc}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fd0cb693-4fb9-4324-b0ab-8a2456cc6ca9}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4e0c2e7b-b23c-4dd1-b8ca-dec13fac8ab9}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{94e6f8ef-465e-4acc-bae7-2c296815c913}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{33618737-c941-4009-b1ba-ea7941f5aeca}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9d7510a3-d98f-4f32-9795-47f4d1953c34}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4d54401d-f3cc-4c89-bb77-45fcbb819af0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

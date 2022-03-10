@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{18c4e46f-329e-ec11-b3fe-000d3ab303de}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mszcool_name" select="1" icon="1" preview="1">
+        <row name="result" id="mszcool_sessionproposalid">
+          <cell name="mszcool_name" width="200" />
+          <cell name="mszcool_industry" width="100" />
+          <cell name="mszcool_level" width="100" />
+          <cell name="mszcool_presenters" width="100" />
+          <cell name="mszcool_sessionstatus" width="100" />
+          <cell name="mszcool_sessionstatusreason" width="100" />
+          <cell name="mszcool_sessiontechnology" width="100" />
+          <cell name="mszcool_abstract" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="mszcool_sessionproposal">
+          <attribute name="mszcool_name" />
+          <attribute name="mszcool_sessionproposalid" />
+          <attribute name="mszcool_industry" />
+          <attribute name="mszcool_level" />
+          <attribute name="mszcool_presenters" />
+          <attribute name="mszcool_sessionstatus" />
+          <attribute name="mszcool_sessionstatusreason" />
+          <attribute name="mszcool_sessiontechnology" />
+          <attribute name="mszcool_abstract" />
+          <filter type="and">
+            <condition attribute="mszcool_sessionstatus" operator="eq" value="975650000" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Action SessionProposals Submitted" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="All session proposals in submitted state." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>
