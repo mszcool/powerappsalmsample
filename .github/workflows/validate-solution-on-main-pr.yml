@@ -1,4 +1,4 @@
-name: import-solution-to-test.yml
+name: validate-solution-on-main-pr.yml
 
 # This imports the solution into a build environment, checks the solution
 # and only if the check succeeds without issues, it will allow merging into main.
