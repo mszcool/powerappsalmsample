@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="mszcool_sessionstatus" localizedName="SessionStatus" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>0.1.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="SessionStatus" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="975650000" ExternalValue="">
+      <labels>
+        <label description="Submitted" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650001" ExternalValue="">
+      <labels>
+        <label description="Approved" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650002" ExternalValue="">
+      <labels>
+        <label description="Declined" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650003" ExternalValue="">
+      <labels>
+        <label description="Scheduled" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650004" ExternalValue="">
+      <labels>
+        <label description="Delivered" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

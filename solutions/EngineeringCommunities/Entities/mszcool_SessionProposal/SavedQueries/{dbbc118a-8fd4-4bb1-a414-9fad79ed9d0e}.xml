@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{dbbc118a-8fd4-4bb1-a414-9fad79ed9d0e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mszcool_name" select="1" icon="1" preview="1">
+        <row name="result" id="mszcool_sessionproposalid">
+          <cell name="mszcool_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="100" />
+          <cell name="mszcool_industry" width="100" />
+          <cell name="mszcool_level" width="100" />
+          <cell name="mszcool_sessionstatus" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="mszcool_presenters" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="mszcool_sessionproposal">
+          <attribute name="mszcool_sessionproposalid" />
+          <attribute name="mszcool_name" />
+          <attribute name="createdon" />
+          <order attribute="mszcool_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="mszcool_industry" />
+          <attribute name="mszcool_level" />
+          <attribute name="createdby" />
+          <attribute name="mszcool_presenters" />
+          <attribute name="mszcool_sessionstatus" />
+          <attribute name="statuscode" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active SessionProposals" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

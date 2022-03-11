@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{92415bdc-c7b8-468d-ae01-a369f60e0392}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mszcool_name" select="1" icon="1" preview="1">
+        <row name="result" id="mszcool_sessiontechnologyid">
+          <cell name="mszcool_name" width="300" />
+          <cell name="mszcool_comments" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="mszcool_sessiontechnology">
+          <attribute name="mszcool_sessiontechnologyid" />
+          <attribute name="mszcool_name" />
+          <attribute name="createdon" />
+          <order attribute="mszcool_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="mszcool_comments" />
+          <attribute name="createdby" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active SessionTechnologies" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
