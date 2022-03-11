@@ -11,9 +11,9 @@ on:
 
 env:
   solution_name: EngineeringCommunities
-  solution_shipping_folder: out/ship/
-  solution_outbound_folder: out/solutions/
-  solution_source_folder: solutions/
+  solution_shipping_folder: out/ship
+  solution_outbound_folder: out/solutions
+  solution_source_folder: solutions
   solution_release_folder: out/release
   BUILD_ENVIRONMENT_URL: ${{ secrets.POWERPLAT_ALM_BUILDENV }}
   CLIENT_ID: ${{ secrets.POWERPLAT_ALM_APP_ID }}
