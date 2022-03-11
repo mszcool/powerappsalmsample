@@ -4,8 +4,7 @@ name: import-solution-to-test-on-release.yml
 # and only if the check succeeds without issues, it will allow merging into main.
 
 on:
-  pull_request:
-    types: [ opened, edited, synchronize ]
+  push:
     branches:
       - dogfood
 
