@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>mszcool_SessionSubmissionsAdmin</UniqueName>
+  <IntroducedVersion>0.1.0.1</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="62" schemaName="mszcool_SessionSubmissionsAdmin" />
+    <AppModuleComponent type="60" id="{0f177060-319e-ec11-b3fe-000d3ab30a2d}" />
+    <AppModuleComponent type="1" schemaName="mszcool_sessionproposal" />
+    <AppModuleComponent type="26" id="{dbbc118a-8fd4-4bb1-a414-9fad79ed9d0e}" />
+    <AppModuleComponent type="59" id="{d6a24cc2-329e-ec11-b3fe-000d3ab30a2d}" />
+    <AppModuleComponent type="59" id="{61176929-329e-ec11-b3fe-000d3ab30a2d}" />
+    <AppModuleComponent type="1" schemaName="mszcool_sessionschedule" />
+    <AppModuleComponent type="26" id="{04f04b00-1112-4095-a4ec-cd2fe5c975d4}" />
+    <AppModuleComponent type="59" id="{2767f9ff-339e-ec11-b3fe-000d3ab30a2d}" />
+    <AppModuleComponent type="1" schemaName="mszcool_sessiontechnology" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="SessionSubmissionsAdmin" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Administer session submissions and metadata related to session submissions." languagecode="1033" />
+  </Descriptions>
+</AppModule>

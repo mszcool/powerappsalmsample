@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>mszcool_sessionsubmissionapp_56df9</Name>
+  <AppVersion>2022-03-10T15:59:04Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.22022.23.0</CreatedByClientVersion>
+  <MinClientVersion>3.22022.23.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","sienaVersion":"20220310T155904Z-3.22022.23.0","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","publisherVersion":"3.22022.23","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>SessionSubmissionApp</DisplayName>
+  <Description>Allows community members to submit new session proposals.</Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified"}},"dataSources":{"SessionProposals":{"entitySetName":"mszcool_sessionproposals","logicalName":"mszcool_sessionproposal"},"SessionTechnologies":{"entitySetName":"mszcool_sessiontechnologies","logicalName":"mszcool_sessiontechnology"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"mszcool_sessionproposal","componenttype":1},{"logicalname":"mszcool_sessiontechnology","componenttype":1},{"logicalname":"systemuser","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/mszcool_sessionsubmissionapp_56df9_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/mszcool_sessionsubmissionapp_56df9_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

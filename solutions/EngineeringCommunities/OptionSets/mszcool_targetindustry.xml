@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="mszcool_targetindustry" localizedName="TargetIndustry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>0.1.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="TargetIndustry" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="975650000" ExternalValue="">
+      <labels>
+        <label description="Horizontal" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650001" ExternalValue="">
+      <labels>
+        <label description="Manufacturing" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650002" ExternalValue="">
+      <labels>
+        <label description="Retail" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650003" ExternalValue="">
+      <labels>
+        <label description="Energy" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650004" ExternalValue="">
+      <labels>
+        <label description="Healthcare" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650005" ExternalValue="">
+      <labels>
+        <label description="Supply Chain" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="975650006" ExternalValue="">
+      <labels>
+        <label description="Financial Services" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

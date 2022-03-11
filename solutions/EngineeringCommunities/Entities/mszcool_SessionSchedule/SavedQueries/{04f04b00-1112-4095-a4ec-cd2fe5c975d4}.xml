@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{04f04b00-1112-4095-a4ec-cd2fe5c975d4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mszcool_deliveryname" select="1" icon="1" preview="1">
+        <row name="result" id="mszcool_sessionscheduleid">
+          <cell name="a_fd44f12e3867481984d77553dce83857.mszcool_name" width="300" />
+          <cell name="mszcool_deliveryname" width="278" />
+          <cell name="mszcool_requestedafter" width="100" />
+          <cell name="mszcool_requestedbefore" width="100" />
+          <cell name="mszcool_scheduledat" width="100" />
+          <cell name="a_fd44f12e3867481984d77553dce83857.mszcool_industry" width="100" />
+          <cell name="a_fd44f12e3867481984d77553dce83857.mszcool_level" width="100" />
+          <cell name="a_fd44f12e3867481984d77553dce83857.mszcool_sessiontechnology" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="mszcool_sessionschedule">
+          <attribute name="mszcool_sessionscheduleid" />
+          <attribute name="mszcool_deliveryname" />
+          <order attribute="mszcool_deliveryname" descending="false" />
+          <attribute name="mszcool_requestedafter" />
+          <attribute name="mszcool_requestedbefore" />
+          <attribute name="mszcool_scheduledat" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="mszcool_scheduledat" operator="next-x-days" value="365" />
+          </filter>
+          <link-entity alias="a_fd44f12e3867481984d77553dce83857" name="mszcool_sessionproposal" to="mszcool_sessionproposal" from="mszcool_sessionproposalid" link-type="outer" visible="false">
+            <attribute name="mszcool_name" />
+            <attribute name="mszcool_industry" />
+            <attribute name="mszcool_level" />
+            <attribute name="mszcool_sessiontechnology" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active SessionSchedules" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
