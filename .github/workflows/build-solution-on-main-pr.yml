@@ -46,13 +46,12 @@ jobs:
         tenant-id: ${{env.TENANT_ID}}
 
     - name: check solution after imported in environment
-      uses: microsoft/powerplatform-actions/check-solution@0.4.0
+      uses: microsoft/powerplatform-actions/check-solution@0.5.2
       with:
         environment-url: ${{env.BUILD_ENVIRONMENT_URL}}
         app-id: ${{env.CLIENT_ID}}
         client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
         tenant-id: ${{env.TENANT_ID}}
-        geo: 'europe'
         path: ${{env.solution_outbound_folder}}/${{env.solution_name }}.zip
 
     # - name: check solution using PowerPlatform CLI
