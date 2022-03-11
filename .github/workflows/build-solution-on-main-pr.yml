@@ -33,8 +33,8 @@ jobs:
     - name: pack solution
       uses: microsoft/powerplatform-actions/pack-solution@0.4.0
       with:
-        solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name }}
-        solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name }}.zip
+        solution-folder: ${{ env.solution_source_folder }}/${{ env.solution_name }}
+        solution-file: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}.zip
         solution-type: Unmanaged
 
     - name: who-am-i action
@@ -45,31 +45,15 @@ jobs:
         client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
         tenant-id: ${{env.TENANT_ID}}
 
-    # - name: check solution after imported in environment
-    #   uses: microsoft/powerplatform-actions/check-solution@0.4.0
-    #   with:
-    #     environment-url: ${{env.BUILD_ENVIRONMENT_URL}}
-    #     app-id: ${{env.CLIENT_ID}}
-    #     client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
-    #     tenant-id: ${{env.TENANT_ID}}
-    #     geo: 'europe'
-    #     path: ${{env.solution_outbound_folder}}/${{env.solution_name }}.zip
-
-    - name: check solution using PowerPlatform CLI
-      uses: Amadevus/pwsh-script@v2
-      id: paccheckscript
-      env:
-        environmenturl: ${{env.BUILD_ENVIRONMENT_URL}}
-        appid: ${{env.CLIENT_ID}}
-        clientsecret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
-        tenantid: ${{env.TENANT_ID}}
-        slnpath: ${{env.solution_outbound_folder}}/${{env.solution_name }}.zip
+    - name: check solution after imported in environment
+      uses: microsoft/powerplatform-actions/check-solution@0.4.0
       with:
-        script: |
-          Write-Host "Trying to call pac with check solution"
-          pac auth create --name "checkersetup" --url $env:environmenturl --applicationId $env:appid --clientSecret $env:clientsecret --tenant $env:tenantid --cloud public
-          pac auth select --name "checkersetup"
-          pac solution check --path $env:slnpath --geo "europe"
+        environment-url: ${{env.BUILD_ENVIRONMENT_URL}}
+        app-id: ${{env.CLIENT_ID}}
+        client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
+        tenant-id: ${{env.TENANT_ID}}
+        geo: 'europe'
+        path: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}.zip
 
     - name: import solution in build environment for validation
       uses: microsoft/powerplatform-actions/import-solution@0.4.0
