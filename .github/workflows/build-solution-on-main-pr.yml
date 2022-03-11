@@ -24,12 +24,12 @@ jobs:
     runs-on: windows-latest
     env:
       RUNNER_DEBUG: 1
-    
+
     steps:
     - uses: actions/checkout@v2
       with:
         lfs: true
-    
+
     - name: pack solution
       uses: microsoft/powerplatform-actions/pack-solution@0.4.0
       with:
@@ -45,15 +45,15 @@ jobs:
         client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
         tenant-id: ${{env.TENANT_ID}}
 
-    - name: check solution after imported in environment
-      uses: microsoft/powerplatform-actions/check-solution@0.4.0
-      with:
-        environment-url: ${{env.BUILD_ENVIRONMENT_URL}}
-        app-id: ${{env.CLIENT_ID}}
-        client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
-        tenant-id: ${{env.TENANT_ID}}
-        geo: 'europe'
-        path: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}.zip
+    # - name: check solution after imported in environment
+    #   uses: microsoft/powerplatform-actions/check-solution@0.4.0
+    #   with:
+    #     environment-url: ${{env.BUILD_ENVIRONMENT_URL}}
+    #     app-id: ${{env.CLIENT_ID}}
+    #     client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
+    #     tenant-id: ${{env.TENANT_ID}}
+    #     geo: 'europe'
+    #     path: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}.zip
 
     - name: import solution in build environment for validation
       uses: microsoft/powerplatform-actions/import-solution@0.4.0
@@ -62,6 +62,6 @@ jobs:
         app-id: ${{env.CLIENT_ID}}
         client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
         tenant-id: ${{env.TENANT_ID}}
-        solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name }}.zip
+        solution-file: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}.zip
         force-overwrite: true
         publish-changes: true
