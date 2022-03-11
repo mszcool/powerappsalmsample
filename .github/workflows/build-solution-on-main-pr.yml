@@ -37,6 +37,14 @@ jobs:
         solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name }}.zip
         solution-type: Unmanaged
 
+    - name: who-am-i action
+      uses: microsoft/powerplatform-actions/who-am-i@0.4.0
+      with:
+        environment-url: ${{env.BUILD_ENVIRONMENT_URL}}
+        app-id: ${{env.USERNAME}}
+        client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
+        tenant-id: ${{env.TENANT_ID}}
+
     - name: check solution after imported in environment
       uses: microsoft/powerplatform-actions/check-solution@0.4.0
       with:
