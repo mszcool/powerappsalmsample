@@ -52,6 +52,7 @@ jobs:
         app-id: ${{env.CLIENT_ID}}
         client-secret: ${{ secrets.POWERPLAT_ALM_APP_SECRET }}
         tenant-id: ${{env.TENANT_ID}}
+        geo: 'europe'
         path: ${{ env.solution_outbound_folder}}/${{ env.solution_name }}.zip
 
     - name: import solution in build environment for validation
